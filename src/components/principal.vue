@@ -2,16 +2,15 @@
 import { defineProps } from 'vue';
 
 const props= defineProps({
-    sTitulo:{
-        type:String,
-        default:'TelectroV'
-    }
+
+    
 });
 </script>
 
 <template>
 
-<h1>Esta es mi primera app</h1>
+<h1>{{ sTitulo }}</h1>
+<h1>Lista de Tareas</h1>
 
 </template>
 
