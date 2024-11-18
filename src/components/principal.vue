@@ -1,5 +1,12 @@
 <script>
+import { defineProps } from 'vue';
 
+const props= defineProps({
+    sTitulo:{
+        type:String,
+        default:'TelectroV'
+    }
+});
 </script>
 
 <template>
