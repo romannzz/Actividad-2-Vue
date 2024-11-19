@@ -22,7 +22,16 @@ export default {
 </script>
 
 <template>
+ <div>
+    <Input
+     type="text"
+     v-model="nuevaTarea"
+     placeholder="Apunta una nueva tarea"
+     />
+ <button @click="agregarTarea">Agregar</button>
 
+
+ </div>
 
 
 </template>
