@@ -32,4 +32,13 @@ export default {
 </div>
 </template>
 
-<style></style>
+<style>
+ul {
+    list-style: green;
+    padding: 0;
+    }
+
+    li{
+        
+    }
+</style>
