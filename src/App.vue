@@ -16,9 +16,21 @@ data(){
                 {id:2, 'Comprar la copa para los premios celo 2024-2025', completada:false},
             ],
 
-    }
+    };
 
 
+},
+
+methods: {
+    agregarTarea(tareaTitulo){
+        const nuevaTarea= {
+            id:Date.now(),
+            titulo: tareaTitulo,
+            completada: false,
+        };
+        this.tareas.push(nuevaTarea);
+    },
+        
 }
 
 }
