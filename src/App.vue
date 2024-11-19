@@ -34,10 +34,12 @@ methods: {
         const tarea = this.tareas.find(t => t.id === id);
         if (tarea) tarea.completada = !tarea.completada;
     },
-    
-}
+    eleminarTarea(id) {
+        this.tareas = this.tareas.filter(t => t.id !== id);
+    },
+},
 
-}
+};
 
 </script>
 
