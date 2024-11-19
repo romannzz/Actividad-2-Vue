@@ -57,6 +57,12 @@ methods: {
 </template>
 
 <style scoped>
+#app {
+    font-family:sans-serif;
+    max-width:600px;
+    margin: auto;
 
+
+}
 
 </style>
