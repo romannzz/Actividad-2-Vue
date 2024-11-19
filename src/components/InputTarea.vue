@@ -29,11 +29,9 @@ export default {
      placeholder="Apunta una nueva tarea"
      />
  <button @click="agregarTarea">Agregar</button>
-
-
+ <p v-if="error" class="error">{{ error }}</p>
  </div>
-
-
+ 
 </template>
 
 <style scoped>
