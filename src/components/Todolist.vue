@@ -9,12 +9,27 @@ export default {
     },
   },
 };
-
-
 </script>
 
+<template>
+<div>
+    <ul>
+        <li
+        v-for="tarea in tareas"
+        :key="tarea.id"
+        :class="{ completada: tarea.completada }"
+        >
+        {{ tarea.titulo }}
+        <button @click="$emit('completarTarea', tarea.id)">
+         {{ tarea.completada ? 'Desmarcar' : 'Completar' }}
+        </button>
+        <button @click="$emit('eliminarTarea', tarea.id)">Eliminar</button>
 
+        </li> 
 
-<template></template>
+    </ul>
+
+</div>
+</template>
 
 <style></style>
