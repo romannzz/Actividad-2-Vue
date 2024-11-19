@@ -12,15 +12,14 @@ export default {
             if (this.nuevaTarea.trim() === '') {
                 this.error = 'La tarea no puede estar vacia';
             }else {
-                this.error= ''
+                this.error= '';
+                this.$emit('nuevaTarea', this.nuevaTarea);
+                this.nuevaTarea = '';
             }
-        }
-    }
-}
-
-
+        },
+    },
+};
 </script>
-
 
 <template>
 
