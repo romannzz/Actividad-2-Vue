@@ -30,7 +30,11 @@ methods: {
         };
         this.tareas.push(nuevaTarea);
     },
-        
+    completarTarea(id) {
+        const tarea = this.tareas.find(t => t.id === id);
+        if (tarea) tarea.completada = !tarea.completada;
+    },
+    
 }
 
 }
