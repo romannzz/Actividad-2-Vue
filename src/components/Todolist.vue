@@ -38,11 +38,14 @@ ul {
     padding: 0;
     }
 
-    li{
+li{
       display:flex;
       justify-content: space-between;
       margin-bottom:10px;  
     }
 
-
+.completada {
+    text-decoration: line-through;
+    color:gray;
+    }
 </style>
