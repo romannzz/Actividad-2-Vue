@@ -31,9 +31,12 @@ export default {
  <button @click="agregarTarea">Agregar</button>
  <p v-if="error" class="error">{{ error }}</p>
  </div>
- 
+
 </template>
 
 <style scoped>
-
+.error {
+    color: red;
+    font-size: 0.9em;
+}
 </style>
