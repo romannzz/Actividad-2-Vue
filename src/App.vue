@@ -37,7 +37,7 @@ methods: {
     eleminarTarea(id) {
         this.tareas = this.tareas.filter(t => t.id !== id);
     },
-},
+    },
 
 };
 
