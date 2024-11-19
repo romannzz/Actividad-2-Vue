@@ -44,11 +44,16 @@ methods: {
 </script>
 
 <template>
- <h1>Lista de tareas</h1>
+<div id="app">
+     <h1>Lista de tareas</h1>
+     <InputTarea @nuevaTarea="agregarTaarea"/>    
+     <Todolist
+     :tareas="tareas"
+     @completarTarea="completarTarea"
+     @eliminarTarea="eliminarTarea"
+     />
 
-
-
-
+    </div>
 </template>
 
 <style scoped>
