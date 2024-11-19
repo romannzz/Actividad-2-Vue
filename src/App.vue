@@ -1,15 +1,15 @@
 <script setup>
-import principal from './components/principal.vue';
+import InputTarea from './components/InputTarea.vue';
+import Todolist from './components/Todolist.vue';
 
 </script>
 
 <template>
- 
- <div id="app">
+ <h1>Lista de tareas</h1>
 
-<h1>Lista de Tareas<h1>
 
-</div>
+
+
 </template>
 
 <style scoped>
