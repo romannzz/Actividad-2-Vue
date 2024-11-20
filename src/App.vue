@@ -20,25 +20,26 @@ data(){
     };
 },
 
-};
+
 
 methods: {
-    agregarTarea(tareaTitulo); {
-        const nuevaTarea= {
-            id:Date.now(),
-            titulo: tareaTitulo,
-            completada: false,
-        };
-        this.tareas.push(nuevaTarea);
-    }
-    completarTarea(id); {
-        const tarea = this.tareas.find(t => t.id === id);
-        if (tarea) tarea.completada = !tarea.completada;
-    }
-    eleminarTarea(id); {
-        this.tareas = this.tareas.filter(t => t.id !== id);
-    };
-    };
+    agregarTarea(tareaTitulo) {
+      const nuevaTarea = {
+        id: Date.now(),
+        titulo: tareaTitulo,
+        completada: false,
+      };
+      this.tareas.push(nuevaTarea);
+    },
+    completarTarea(id) {
+      const tarea = this.tareas.find(t => t.id === id);
+      if (tarea) tarea.completada = !tarea.completada;
+    },
+    eliminarTarea(id) {
+      this.tareas = this.tareas.filter(t => t.id !== id);
+    },
+  },
+};
 
 
 
