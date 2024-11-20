@@ -48,7 +48,7 @@ methods: {
 <template>
 <div id="app">
      <h1>Lista de tareas</h1>
-     <InputTarea @nuevaTarea="agregarTaarea"/>    
+     <InputTarea @nuevaTarea="agregarTarea"/>    
      <Todolist
      :tareas="tareas"
      @completarTarea="completarTarea"
