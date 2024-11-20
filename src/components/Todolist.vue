@@ -1,14 +1,15 @@
 <script setup>
+
 export default {
   
-    name: 'Todolist',
+name: 'Todolist';
     props: {
-    tareas: {
-        type:Array,
-        required: true,
-    },
-  },
-};
+        tareas: {
+        type:Array;
+        required: true;
+        };
+    };
+}
 </script>
 
 <template>

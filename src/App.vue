@@ -1,8 +1,9 @@
-<script setup>
+<script >
+
 import InputTarea from './components/InputTarea.vue';
 import Todolist from './components/Todolist.vue';
 
-export default {
+export default  {
 
 name: 'App',
 components : {
@@ -16,10 +17,10 @@ data(){
                 {id:2, 'Comprar la copa para los premios celo 2024-2025', completada:false},
             ],
 
-    };
-
-
+    },
 },
+
+};
 
 methods: {
     agregarTarea(tareaTitulo){
@@ -29,17 +30,17 @@ methods: {
             completada: false,
         };
         this.tareas.push(nuevaTarea);
-    },
+    };
     completarTarea(id) {
         const tarea = this.tareas.find(t => t.id === id);
         if (tarea) tarea.completada = !tarea.completada;
-    },
+    };
     eleminarTarea(id) {
         this.tareas = this.tareas.filter(t => t.id !== id);
-    },
-    },
+    };
+    };
 
-};
+
 
 </script>
 
