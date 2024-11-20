@@ -23,19 +23,19 @@ data(){
 };
 
 methods: {
-    agregarTarea(tareaTitulo){
+    agregarTarea(tareaTitulo); {
         const nuevaTarea= {
             id:Date.now(),
             titulo: tareaTitulo,
             completada: false,
         };
         this.tareas.push(nuevaTarea);
-    };
-    completarTarea(id) {
+    }
+    completarTarea(id); {
         const tarea = this.tareas.find(t => t.id === id);
         if (tarea) tarea.completada = !tarea.completada;
-    };
-    eleminarTarea(id) {
+    }
+    eleminarTarea(id); {
         this.tareas = this.tareas.filter(t => t.id !== id);
     };
     };
